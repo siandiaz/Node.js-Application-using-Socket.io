@@ -10,7 +10,7 @@ You will learn:
  
 A screenshot of the completed application is below:
  
-![Node.js Socket.IO App](Node.js-Application-using-Socket.io/images/dev-nodejs-socketio-10.png?raw=true)
+![Node.js Socket.IO App](images/dev-nodejs-socketio-10.png?raw=true)
 
 ## Windows Azure Considerations
  
