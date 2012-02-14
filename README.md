@@ -63,7 +63,7 @@ For this project, we will use the [chat example](https://github.com/LearnBoost/s
 
 2. In Windows Explorer, right click the downloaded .zip file and select **Extract All**. When prompted, select a directory to extract the files to and then click Extract. The folder containing the extracted files should open.
 
-![Extract Compressed Folders](imagess/dev-nodejs-socketio-3.png)
+![Extract Compressed Folders](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images//dev-nodejs-socketio-3.png?raw=true)
  
 3. Navigate the folder structure until you arrive at the examples\chat folder. Copy the contents of this folder to the C:\node\chatapp\WorkerRole1 folder created earlier.
 
