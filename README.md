@@ -16,13 +16,13 @@ A screenshot of the completed application is below:
  
 When an application is hosted on Windows Azure, it only has access to the ports configured in the ServiceDefinition.csdef file. By default, the projects created using the **New-AzureService** cmdlet provided by the [Windows Azure SDK for Node.js](https://www.windowsazure.com/en-us/develop/nodejs/) open port 80. However when running the project in the Windows Azure emulator this port may be modified to a different port such as 81. To ensure that your application always receives traffic on correct port, you should use **process.env.port**, which will be mapped to the correct port at runtime. For example:
 
-```
+```js
 app.listen(process.env.port);
 ```
 
 If your node application runs in a Web role (created using the **Add-AzureNodeWebRole** cmdlet,) you must configure Socket.io to use a transport other than WebSocket. This is because the Web role makes use of IIS7, which doesn’t currently support WebSockets. The following is an example of configuring Socket.io to use long-polling:
 
-```
+```js
 io.configure(function () {
   io.set("transports", ["xhr-polling"]);
   io.set("polling duration", 10);
@@ -83,7 +83,7 @@ Before testing the application in the Windows Azure emulator, we must make some 
  
 2. Modifiy the require statement for socket.io by removing the ‘../../lib/’ from the beginning of the string. The modified statement should appear as:
 
-    ``` 
+    ```js
     , sio = require('socket.io'); 
     ```
 
@@ -91,7 +91,7 @@ Before testing the application in the Windows Azure emulator, we must make some 
  
 3. To ensure the application listens on the correct port, open server.js in Notepad or your favorite editor, and then change the following line by replacing **3000** with **process.env.port**:
 
-    ```
+    ```js
     app.listen(3000, function () { 
     ```
 
