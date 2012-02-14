@@ -10,7 +10,7 @@ You will learn:
  
 A screenshot of the completed application is below:
  
-![Node.js Socket.IO App](images/dev-nodejs-socketio-10.png?raw=true)
+![Node.js Socket.IO App](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-10.png?raw=true)
 
 ## Windows Azure Considerations
  
@@ -40,7 +40,7 @@ The following steps will guide you through the process of creating a Windows Azu
  
 2. Create a new **node** directory on your C drive, and change to the c:\node directory:
  
-![Create node directory](images/dev-nodejs-getting-started-6.png)
+![Create node directory](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-getting-started-6.png?raw=true)
 
 3. Enter the following commands to create a new solution named **chatapp** and a worker role named **WorkerRole1**:
 
@@ -51,7 +51,7 @@ PS C:\node\chatapp> Add-AzureNodeWorkerRole
 
 You will see the following response:
 
-![Add-AzureNodeWorkerRole](images/dev-nodejs-socketio-1.png)
+![Add-AzureNodeWorkerRole](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-1.png?raw=true)
 
 ### Download the Chat Example
  
@@ -59,7 +59,7 @@ For this project, we will use the [chat example](https://github.com/LearnBoost/s
 
 1. Click the **ZIP** button to download a .zip archive of the project.
 
-![Zip Download](images/dev-nodejs-socketio-2.png)
+![Zip Download](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-2.png?raw=true)
 
 2. In Windows Explorer, right click the downloaded .zip file and select **Extract All**. When prompted, select a directory to extract the files to and then click Extract. The folder containing the extracted files should open.
 
@@ -67,11 +67,11 @@ For this project, we will use the [chat example](https://github.com/LearnBoost/s
  
 3. Navigate the folder structure until you arrive at the examples\chat folder. Copy the contents of this folder to the C:\node\chatapp\WorkerRole1 folder created earlier.
 
-![Chat Folder](images/dev-nodejs-socketio-4.png)
+![Chat Folder](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-4.png?raw=true)
 
 After the copy operation completes, the contents of the WorkerRole1 folder should appear as follows:
 
-![WorkerRole1 Folder](images/dev-nodejs-socketio-5.png)
+![WorkerRole1 Folder](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-5.png?raw=true)
  
 4. In the C:\node\chatapp\WorkerRole1 folder, delete the server.js file, and then rename the app.js file to server.js. This removes the default server.js file created previously by the **Add-AzureNodeWorkerRole** cmdlet and replaces it with the application file from the chat example.
  
@@ -112,7 +112,7 @@ PS C:\node\chatapp\WorkerRole1\npm install
 
 This will install the modules listed in the package.json file. After the command completes, you should see output similar to the following:
 
-![Install Modules](images/dev-nodejs-socketio-7.png)
+![Install Modules](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-7.png?raw=true)
  
 4. Since this example was originally a part of the Socket.io GitHub repository, and directly referenced the Socket.io library by relative path, Socket.io was not referenced in the package.json file, so we must install it by issuing the following command:
 
@@ -132,7 +132,7 @@ PS C:\node\chatapp\WorkerRole1> Start-AzureEmulator -launch
  
 2. When the browser window opens, enter a nickname and then hit enter. This will all you to post messages as a specific nickname. To test multi-user functionality, open additional browser windows using the same URL and enter different nicknames.
 
-![Enter Nicknames](images/dev-nodejs-socketio-8.png)
+![Enter Nicknames](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-8.png?raw=true)
  
 3. After testing the application, stop the emulator by issuing the following command:
 
@@ -148,10 +148,10 @@ PS C:\node\chatapp\WorkerRole1> Publish-AzureService -name chatapp -location "No
 
 Be sure to use a unique name, otherwise the publish process will fail. After publishing is complete, you should see the following response.
 
-![Publish](images/dev-nodejs-socketio-9.png)
+![Publish](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-9.png?raw=true)
 
 After the deployment has completed, the browser will open and navigate to the deployed service.
 
-![Completed App](images/dev-nodejs-socketio-10.png)
+![Completed App](https://github.com/microsoft-dpe/Node.js-Application-using-Socket.io/blob/master/images/dev-nodejs-socketio-10.png?raw=true)
 
 Your application is now running on Windows Azure, and can relay chat messages between different clients using Socket.io.
